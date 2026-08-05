@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Louis Laumonier — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<script>if(localStorage.getItem('night')==='1')document.documentElement.classList.add('night');</script>
+</head>
+<body class="home-body">
+
+  <footer class="site-footer" aria-hidden="true">2026 © Copyright Louis Laumonier. Tous droits réservés.</footer>
+
+  <div class="stage" aria-label="Accueil">
+    <h1 class="title">
+      <span>PORTF</span>
+      <span class="lamp-o" aria-hidden="true">
+        <svg viewBox="0 0 100 160" style="overflow:visible;">
+          <path class="cordpath" d="M 50 -2000
+            C 49 -1400, 51 -800, 50 -200
+            C 49 -100, 51 -20, 50 46" stroke="var(--ink)" stroke-width="1.7"/>
+
+          <image href="lamp.png" x="19" y="14" width="62" height="99" preserveAspectRatio="xMidYMid meet" draggable="false"/>
+          <rect class="lamp-hit" x="0" y="0" width="100" height="160" fill="transparent"/>
+        </svg>
+      </span>
+      <span>LIO</span>
+    </h1>
+  </div>
+
+  <a class="instagram-link" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+  <a class="mail-link" href="mailto:louislaumonier1@gmail.com">Mail</a>
+
+  <button class="menu-btn" type="button" aria-label="Menu">
+    <svg viewBox="0 0 62 44">
+      <path class="bar" d="M 5 8 C 16 6, 32 10, 57 7"/>
+      <path class="bar" d="M 3 22 C 20 24.5, 36 20, 59 23"/>
+      <path class="bar" d="M 6 37 C 18 34.5, 34 38.5, 55 35"/>
+    </svg>
+  </button>
+
+  <div id="project-cursor"></div>
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <nav>
+      <a class="menu-item" href="index.html">Accueil</a>
+      <a class="menu-item" href="travaux.html">Travaux</a>
+      <a class="menu-item" href="createur.html">Créateur</a>
+    </nav>
+  </div>
+
+  <div class="filmstrip" aria-hidden="false">
+    <div class="filmstrip-track">
+      <div class="film-frame" data-project="ventilo: 2300" data-slug="ventilo"><img class="crop-top" src="ventilo.png" alt="Projet ventilateurs"><button class="frame-hit" type="button" aria-label="Voir le projet ventilo: 2300"></button></div>
+      <div class="film-frame" data-project="stase" data-slug="stase"><img src="derniere .jpg" alt="Projet applique murale cuir"><button class="frame-hit" type="button" aria-label="Voir le projet stase"></button></div>
+      <div class="film-frame" data-project="totem" data-slug="totem"><img src="compovert.jpg" alt="Projet bougeoir bois"><button class="frame-hit" type="button" aria-label="Voir le projet totem"></button></div>
+      <div class="film-frame" data-project="Error 404" data-slug="error404"><img src="piuy-4.jpg" style="object-position: 32% center;" alt="Pcb moulé alluminium"><button class="frame-hit" type="button" aria-label="Voir le projet Error 404"></button></div>
+      <div class="film-frame" data-project="ventilo: 2300" data-slug="ventilo"><img class="crop-top" src="ventilo.png" alt="Projet ventilateurs"><button class="frame-hit" type="button" aria-label="Voir le projet ventilo: 2300"></button></div>
+      <div class="film-frame" data-project="stase" data-slug="stase"><img src="derniere .jpg" alt="Projet applique murale cuir"><button class="frame-hit" type="button" aria-label="Voir le projet stase"></button></div>
+      <div class="film-frame" data-project="totem" data-slug="totem"><img src="compovert.jpg" alt="Projet bougeoir bois"><button class="frame-hit" type="button" aria-label="Voir le projet totem"></button></div>
+      <div class="film-frame" data-project="Error 404" data-slug="error404"><img src="piuy-4.jpg" style="object-position: 32% center;" alt="Pcb moulé alluminium"><button class="frame-hit" type="button" aria-label="Voir le projet Error 404"></button></div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
