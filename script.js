@@ -1,31 +1,22 @@
-// ---------------------------------------------------------------------
-// Lamp pull-cord (day/night toggle). Only present on index.html, so
-// everything here is guarded in case the .lamp-o element is missing.
-// The chosen state is saved to localStorage so it carries over to the
-// other pages (each page reads it back via a tiny inline snippet in
-// its <head>, before paint, to avoid a flash of the wrong theme).
-// ---------------------------------------------------------------------
 (function () {
   var wrap = document.querySelector('.lamp-o');
   if (!wrap) return;
   var svg = wrap.querySelector('svg');
 
-  var MAX_PULL  = 42; // px — how far the lamp can be dragged down
-  var THRESHOLD = 24; // px — drag distance needed to trigger a toggle
+  var MAX_PULL  = 42; 
+  var THRESHOLD = 24;
 
   var dragging   = false;
   var startY   = 0;
   var pulled   = 0;
   var isOn     = document.documentElement.classList.contains('night');
 
-  // ---- Hook for a future feature ----------------------------------
-  // Replace / extend this function (or listen for the custom event
-  // below) to connect the lamp to whatever it should control later.
+
   function onLampToggle(state) {
-    // TODO: connect real feature here
+
     window.dispatchEvent(new CustomEvent('lamp:toggle', { detail: { on: state } }));
   }
-  // -------------------------------------------------------------------
+
 
   function setOn(state) {
     isOn = state;
@@ -101,7 +92,7 @@
   var root = document.documentElement;
   if (!root.classList.contains('scroll-page')) return;
 
-  var THRESHOLD = 60; // threshold scroll test later
+  var THRESHOLD = 60;
 
   function onScroll() {
     var y = window.scrollY || document.documentElement.scrollTop || 0;
