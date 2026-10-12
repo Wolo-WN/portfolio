@@ -146,7 +146,6 @@
 
   .lamp-o svg image{
     -webkit-user-drag: none;
-    user-drag: none;
     pointer-events: none; 
   }
 
