@@ -5,7 +5,9 @@ window.PROJECTS = {
       { src: "ventilo.png", alt: "Projet ventilateurs", cropTop: true },
       { src: "bbbg.jpg", alt: "Projet ventilateurs, gros plan" },
       { src: "bbjb.jpg", alt: "Projet ventilateurs, vue d'ensemble" },
-      { src: "bbexpo.jpg", alt: "Projet ventilateurs, exposition" }
+      { src: "bbexpo.jpg", alt: "Projet ventilateurs, exposition" },
+      { src: "disque.png", alt: "Projet ventilateurs, gros plan" },
+      { src: "dreamteam.png", alt: "Projet ventilateurs, gros plan" },
     ],
     text: "Dans un futur spéculatif imaginé à l'occasion d'un workshop au Domaine de Boisbuchet avec Jean-Baptiste Durand, les combustibles fossiles ne sont plus disponibles. Alors que deviennent nos objets ? À quoi ressemblent-ils ? Comment fonctionnent-ils ? Quels matériaux définissent les objets d'un futur post-fossile ? J'ai alors décidé d'hybrider matériaux naturels et tech en récupérants des cailloux de la rivière du domaine et en y fixant des ventilateurs de vieux ordinateurs ainsi qu'un panneau LED. L'entiereté du système éléctrique est visible et rudimentaire, le tout conférant à la pièce un style cyberpunk propre à ce futur."
   },
@@ -46,6 +48,16 @@ window.PROJECTS = {
       { src: "piuy-3.jpg", alt: "Pcb moulé alluminium, posé sur socle de lave" }
     ],
     text: "Lors de mon passage au Domaine de Boisbuchet, j'ai eu accès à la fonderie. Suite à un premier échec ayant trop compacté le sable de mon moule, j'ai trouvé que cette « erreur » redonnait à la nature ses droits. Alors j'ai moulé un PCB : matériau d'origine technologique, et ai tout fait pour créer un objet qui semblerait nécrosé par le temps et la nature."
+  },
+  "22 secondes": {
+    title: "22 secondes",
+    images: [
+      { src: "bague_metal_retouchee.png", alt: "Projet final", objectPosition: "32% center" },
+      { src: "impression.png", alt: "Impression prototype" },
+      { src: "moule.jpg", alt: "Moule en sable" },
+      { src: "code.png", alt: "Code tool" }
+    ],
+    text: "J’ai longtemps cherché un moyen de rendre la musique tangible et transportable partout. J’ai alors fini par développer un logiciel personnel décodant et créant un relief à partir du spectrogramme d’un fichier son pour le calquer sur un anneau et en faire un fichier 3D pour l’imprimer sur une bague en plastique pour la mouler en étain. De cette manière, j’ai scellé 22 secondes d’une chanson m’étant cher pour pouvoir la porter sur moi. L’outil créé était au départ personnel mais pour répondre une demande générale, je l’ai adapté en version web utilisable par n’importe qui:  https://spectrobaguebam.onrender.com"
   }
 };
 
